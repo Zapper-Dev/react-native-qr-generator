@@ -1,5 +1,10 @@
-import { NativeModules } from 'react-native'
+import React from 'react'
+import { requireNativeComponent } from 'react-native'
 
-const { QRCode } = NativeModules
+const NativeQRCode = requireNativeComponent('QRCode')
+
+const QRCode = props => {
+  return <NativeQRCode {...props} style={{ width: props.size, height: props.size, ...props.style }} />
+}
 
 export default QRCode
