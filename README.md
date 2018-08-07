@@ -45,5 +45,5 @@ return <QRCode size={200} value="https://www.zapper.com" />
 
 | Name  | Type     | Description |
 | :---- | :------: | :--- |
-| value | string   | String value you want to encode as a QR code |
+| value | string   | String value to be encoded as a QR code |
 | size | integer   | Size of the QR Code image, sets the width and height style properties of the view to this value |
