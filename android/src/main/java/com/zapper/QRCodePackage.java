@@ -15,7 +15,7 @@ import java.util.List;
  * Created by keiran on 2018/05/30.
  */
 
-public class QRCodeViewPackage implements ReactPackage {
+public class QRCodePackage implements ReactPackage {
 
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
