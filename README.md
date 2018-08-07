@@ -36,8 +36,7 @@
 
 ## Usage
 ```javascript
-import QRCode from 'react-native-qr-generator'
+import QRCode from 'react-native-qr-generator';
 
 return <QRCode size={200} value="https://www.zapper.com" />
 ```
-  
