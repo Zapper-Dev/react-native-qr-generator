@@ -9,7 +9,7 @@
 #import "RNReactNativeQrcodeNative.h"
 #import "QRCodeView.h"
 
-@implementation RNReactNativeQrcodeNative
+@implementation QRCode
 
 RCT_EXPORT_MODULE()
 

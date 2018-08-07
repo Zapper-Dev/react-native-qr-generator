@@ -1,5 +1,5 @@
 import { NativeModules } from 'react-native'
 
-const { RNQRCodeNative } = NativeModules
+const { QRCode } = NativeModules
 
-export default RNQRCodeNative
+export default QRCode

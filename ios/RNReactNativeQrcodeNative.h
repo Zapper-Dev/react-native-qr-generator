@@ -9,7 +9,7 @@
 #import <React/RCTViewManager.h>
 #import "QRCodeGenerator.h"
 
-@interface RNReactNativeQrcodeNative : RCTViewManager
+@interface QRCode : RCTViewManager
 @property (nonatomic, strong) NSString *value;
 @property (nonatomic, strong) NSNumber *size;
 @end
