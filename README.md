@@ -40,3 +40,10 @@ import QRCode from 'react-native-qr-generator';
 
 return <QRCode size={200} value="https://www.zapper.com" />
 ```
+
+### Supported options:
+
+| Name  | Type     | Description |
+| :---- | :------: | :--- |
+| value | string   | String value to be encoded as a QR code |
+| size | integer   | Size of the QR Code image, sets the width and height style properties of the view to this value |
