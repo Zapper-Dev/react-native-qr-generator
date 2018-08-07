@@ -9,7 +9,7 @@
 
 `$ react-native link react-native-qr-generator`
 
-##### IMPORTANT for Android
+#### IMPORTANT for Android
 In your project's `android/build.gradle` file, include the following:
 
 ```
