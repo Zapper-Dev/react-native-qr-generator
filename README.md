@@ -46,14 +46,14 @@ allprojects {
       compile project(':react-native-qr-generator')
   	```
 4. In your project's `android/build.gradle` file, include the following:
-```
-allprojects {
-	repositories {
-		...
-		maven { url "https://jitpack.io" }
-	}
-}
-```
+		```
+			allprojects {
+				repositories {
+					...
+					maven { url "https://jitpack.io" }
+				}
+			}
+		```
 
 ## Usage
 ```javascript
