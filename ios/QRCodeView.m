@@ -13,21 +13,30 @@
 
 - (void)setValue:(NSString *)value {
     _value = value;
-    
-    QRCodeGenerator *qr = [[QRCodeGenerator alloc] initWithString: self.value];
-    qr.size = CGSizeMake(400.0f, 400.0f); // 400x400 size
-    qr.color = [CIColor colorWithRGBA:@"#000000"]; // white QR Code color
-    qr.backgroundColor = [CIColor colorWithRGBA:@"#FFFFFF"]; // black background color
-    [self setImage:[qr getImage]];
+    [self generateImage];
 }
 
 - (void)setSize:(NSNumber *)value {
     _size = value;
+    [self generateImage];
+}
+
+- (void)setBgColor:(NSString *)value {
+    _bgColor = value;
+    [self generateImage];
+}
+
+- (void)setFgColor:(NSString *)value {
+    _fgColor = value;
+    [self generateImage];
+}
+
+- (void)generateImage {
     if (![_value isEqualToString:@""]) {
         QRCodeGenerator *qr = [[QRCodeGenerator alloc] initWithString: self.value];
         qr.size = CGSizeMake([_size doubleValue], [_size doubleValue]);
-        qr.color = [CIColor colorWithRGBA:@"#000000"];
-        qr.backgroundColor = [CIColor colorWithRGBA:@"#FFFFFF"];
+        qr.color = [CIColor colorWithRGBA:_fgColor];
+        qr.backgroundColor = [CIColor colorWithRGBA:_bgColor];
         [self setImage:[qr getImage]];
     }
 }

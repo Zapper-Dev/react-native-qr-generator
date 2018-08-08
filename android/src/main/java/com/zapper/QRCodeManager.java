@@ -1,6 +1,8 @@
 package com.zapper;
 
 import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.util.Log;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.react.uimanager.SimpleViewManager;
@@ -13,7 +15,7 @@ import net.glxn.qrgen.android.QRCode;
 import javax.annotation.Nullable;
 
 /**
- * Created by keiran on 2018/05/30.
+ * Created by zapperdev on 2018/05/30.
  */
 
 public class QRCodeManager extends SimpleViewManager<ReactImageView> {
@@ -22,27 +24,38 @@ public class QRCodeManager extends SimpleViewManager<ReactImageView> {
 
   private String qrCodeValue = "";
   private int size = 400;
+  private int onColor = 0xFF000000;
+  private int offColor = 0xFFFFFFFF;
   private @Nullable ReactImageView mImageView = null;
 
-  @SuppressWarnings("deprecation")
   @ReactProp(name = "value")
   public void setValue(ReactImageView view, @Nullable String value) {
     qrCodeValue = value;
-    Bitmap myBitmap = QRCode.from(this.qrCodeValue).withSize(this.size, this.size).bitmap();
 
-    mImageView.setImageBitmap(myBitmap);
+    this.generateImage();
   }
 
-  @SuppressWarnings("deprecation")
   @ReactProp(name = "size")
   public void setSize(ReactImageView view, @Nullable int value) {
     this.size = value;
 
-    if (this.qrCodeValue != "") {
-      Bitmap myBitmap = QRCode.from(this.qrCodeValue).withSize(this.size, this.size).bitmap();
+    this.generateImage();
+  }
 
-      mImageView.setImageBitmap(myBitmap);
+  @ReactProp(name = "fgColor")
+  public void setForegroundColor(ReactImageView view, @Nullable String value) {
+    if (value != null) {
+      this.onColor = this.hexToInt(value, this.onColor);
     }
+    this.generateImage();
+  }
+
+  @ReactProp(name = "bgColor")
+  public void setBackgroundColor(ReactImageView view, @Nullable String value) {
+    if (value != null) {
+      this.offColor = this.hexToInt(value, this.offColor);
+    }
+    this.generateImage();
   }
 
   @Override
@@ -64,5 +77,25 @@ public class QRCodeManager extends SimpleViewManager<ReactImageView> {
     mImageView = new ReactImageView(context, Fresco.newDraweeControllerBuilder(), null, mCallerContext);
 
     return mImageView;
+  }
+
+  @SuppressWarnings("deprecation")
+  private void generateImage() {
+    if (this.qrCodeValue != "") {
+      Bitmap myBitmap = QRCode.from(this.qrCodeValue).withSize(this.size, this.size)
+          .withColor(this.onColor, this.offColor).bitmap();
+
+      mImageView.setImageBitmap(myBitmap);
+    }
+  }
+
+  private int hexToInt(String value, int defaultValue) {
+    try {
+      return Color.parseColor(value);
+    } catch (Exception e) {
+      Log.d("ERR", e.getMessage());
+    }
+
+    return defaultValue;
   }
 }

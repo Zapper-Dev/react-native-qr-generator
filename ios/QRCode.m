@@ -6,7 +6,7 @@
 //  Copyright © 2018 Facebook. All rights reserved.
 //
 
-#import "RNReactNativeQrcodeNative.h"
+#import "QRCode.h"
 #import "QRCodeView.h"
 
 @implementation QRCode
@@ -14,6 +14,8 @@
 RCT_EXPORT_MODULE()
 
 RCT_EXPORT_VIEW_PROPERTY(value, NSString)
+RCT_EXPORT_VIEW_PROPERTY(bgColor, NSString)
+RCT_EXPORT_VIEW_PROPERTY(fgColor, NSString)
 RCT_EXPORT_VIEW_PROPERTY(size, NSNumber)
 
 - (UIImageView *)view

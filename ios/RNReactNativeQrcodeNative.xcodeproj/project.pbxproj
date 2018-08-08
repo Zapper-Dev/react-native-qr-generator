@@ -11,7 +11,7 @@
 		3870DF672110CF590084283A /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3870DF662110CF590084283A /* NSString+Utils.m */; };
 		3870DF6B2110CF910084283A /* CIColor+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3870DF6A2110CF910084283A /* CIColor+QRCode.m */; };
 		3870DF6D2110CFDC0084283A /* QRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3870DF6C2110CFDC0084283A /* QRCodeView.m */; };
-		B3E7B58A1CC2AC0600A0062D /* RNReactNativeQrcodeNative.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNReactNativeQrcodeNative.m */; };
+		388A7D2C211AE54F008D8F7B /* QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 388A7D2B211AE54F008D8F7B /* QRCode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,8 +36,8 @@
 		3870DF6A2110CF910084283A /* CIColor+QRCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CIColor+QRCode.m"; sourceTree = "<group>"; };
 		3870DF6C2110CFDC0084283A /* QRCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeView.m; sourceTree = "<group>"; };
 		3870DF6E2110CFED0084283A /* QRCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeView.h; sourceTree = "<group>"; };
-		B3E7B5881CC2AC0600A0062D /* RNReactNativeQrcodeNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNReactNativeQrcodeNative.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNReactNativeQrcodeNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNReactNativeQrcodeNative.m; sourceTree = "<group>"; };
+		388A7D2A211AE54F008D8F7B /* QRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = QRCode.h; path = "/Users/keiran/Work/Zapper/react-native-qrcode-library/react-native-qrcode-native/ios/QRCode.h"; sourceTree = "<absolute>"; };
+		388A7D2B211AE54F008D8F7B /* QRCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = QRCode.m; path = "/Users/keiran/Work/Zapper/react-native-qrcode-library/react-native-qrcode-native/ios/QRCode.m"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +75,11 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				388A7D2A211AE54F008D8F7B /* QRCode.h */,
+				388A7D2B211AE54F008D8F7B /* QRCode.m */,
 				3870DF6E2110CFED0084283A /* QRCodeView.h */,
 				3870DF6C2110CFDC0084283A /* QRCodeView.m */,
 				3870DF602110CEC60084283A /* QRCodeGenerator */,
-				B3E7B5881CC2AC0600A0062D /* RNReactNativeQrcodeNative.h */,
-				B3E7B5891CC2AC0600A0062D /* RNReactNativeQrcodeNative.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,10 +141,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3870DF6D2110CFDC0084283A /* QRCodeView.m in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* RNReactNativeQrcodeNative.m in Sources */,
 				3870DF672110CF590084283A /* NSString+Utils.m in Sources */,
 				3870DF652110CF240084283A /* QRCodeGenerator.m in Sources */,
 				3870DF6B2110CF910084283A /* CIColor+QRCode.m in Sources */,
+				388A7D2C211AE54F008D8F7B /* QRCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

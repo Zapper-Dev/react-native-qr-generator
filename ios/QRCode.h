@@ -11,5 +11,7 @@
 
 @interface QRCode : RCTViewManager
 @property (nonatomic, strong) NSString *value;
+@property (nonatomic, strong) NSString *bgColor;
+@property (nonatomic, strong) NSString *fgColor;
 @property (nonatomic, strong) NSNumber *size;
 @end
