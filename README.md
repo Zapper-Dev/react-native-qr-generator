@@ -65,7 +65,9 @@ return <QRCode size={200} value="https://www.zapper.com" />
 
 ### Supported options:
 
-| Name  | Type     | Description |
-| :---- | :------: | :--- |
-| value | string   | String value to be encoded as a QR code |
-| size | integer   | Size of the QR Code image, sets the width and height style properties of the view to this value |
+| Name  | Type     | Default  | Description |
+| :---- | :------: | :------- | :--- |
+| value | string | - | String value to be encoded as a QR code |
+| size | integer | 200 | Size of the QR Code image, sets the width and height style properties of the view to this value |
+| foregroundColor | string | #000000 | Hex string for the main QR Code color |
+| backgroundColor | string | #FFFFFF | Hex string for the QR Code background color |
