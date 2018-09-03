@@ -5,7 +5,7 @@ A React Native QR code image generator, that uses faster, native image rendering
 
 This library wraps two existing native QR code generator libraries:
 
-**Android:**: [https://github.com/kenglxn/QRGen](https://github.com/kenglxn/QRGen)<br />
+**Android:** [https://github.com/kenglxn/QRGen](https://github.com/kenglxn/QRGen)<br />
 **iOS:** [https://github.com/gscarrone/iOS-QR-Code-Generator](https://github.com/gscarrone/iOS-QR-Code-Generator)
 
 ## Getting started
