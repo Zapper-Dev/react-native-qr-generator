@@ -1,6 +1,13 @@
 
 # react-native-qr-generator
 
+A React Native QR code image generator, that uses faster, native image rendering as opposed to other libraries, which rely on a Javascript/SVG implementation.
+
+This library wraps two existing native QR code generator libraries:
+
+**Android:**: [https://github.com/kenglxn/QRGen](https://github.com/kenglxn/QRGen)<br />
+**iOS:** [https://github.com/gscarrone/iOS-QR-Code-Generator](https://github.com/gscarrone/iOS-QR-Code-Generator)
+
 ## Getting started
 
 `$ npm install react-native-qr-generator --save`
@@ -58,7 +65,7 @@ allprojects {
 
 ## Usage
 ```javascript
-import QRCode from 'react-native-qr-generator';
+import QRCode from 'react-native-qr-generator'
 
 return <QRCode size={200} value="https://www.zapper.com" />
 ```
@@ -71,3 +78,7 @@ return <QRCode size={200} value="https://www.zapper.com" />
 | size | integer | 200 | Size of the QR Code image, sets the width and height style properties of the view to this value |
 | foregroundColor | string | #000000 | Hex string for the main QR Code color |
 | backgroundColor | string | #FFFFFF | Hex string for the QR Code background color |
+
+## Credits
+Android: [https://github.com/kenglxn/QRGen](https://github.com/kenglxn/QRGen)
+iOS: [https://github.com/gscarrone/iOS-QR-Code-Generator](https://github.com/gscarrone/iOS-QR-Code-Generator)
