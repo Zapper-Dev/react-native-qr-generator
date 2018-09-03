@@ -80,5 +80,5 @@ return <QRCode size={200} value="https://www.zapper.com" />
 | backgroundColor | string | #FFFFFF | Hex string for the QR Code background color |
 
 ## Credits
-Android: [https://github.com/kenglxn/QRGen](https://github.com/kenglxn/QRGen)
-iOS: [https://github.com/gscarrone/iOS-QR-Code-Generator](https://github.com/gscarrone/iOS-QR-Code-Generator)
+**Android:** [https://github.com/kenglxn/QRGen](https://github.com/kenglxn/QRGen)<br />
+**iOS:** [https://github.com/gscarrone/iOS-QR-Code-Generator](https://github.com/gscarrone/iOS-QR-Code-Generator)
