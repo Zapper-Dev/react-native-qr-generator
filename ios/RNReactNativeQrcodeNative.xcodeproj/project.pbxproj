@@ -36,8 +36,8 @@
 		3870DF6A2110CF910084283A /* CIColor+QRCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CIColor+QRCode.m"; sourceTree = "<group>"; };
 		3870DF6C2110CFDC0084283A /* QRCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeView.m; sourceTree = "<group>"; };
 		3870DF6E2110CFED0084283A /* QRCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeView.h; sourceTree = "<group>"; };
-		388A7D2A211AE54F008D8F7B /* QRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = QRCode.h; path = "/Users/keiran/Work/Zapper/react-native-qrcode-library/react-native-qrcode-native/ios/QRCode.h"; sourceTree = "<absolute>"; };
-		388A7D2B211AE54F008D8F7B /* QRCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = QRCode.m; path = "/Users/keiran/Work/Zapper/react-native-qrcode-library/react-native-qrcode-native/ios/QRCode.m"; sourceTree = "<absolute>"; };
+		388A7D2A211AE54F008D8F7B /* QRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCode.h; sourceTree = "<group>"; };
+		388A7D2B211AE54F008D8F7B /* QRCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
