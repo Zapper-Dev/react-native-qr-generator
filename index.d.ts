@@ -8,7 +8,7 @@ declare module "react-native-qr-generator" {
         backgroundColor?: string;
     }
 
-    export class QRCode extends React.Component<QRCodeProps> { };
+    export class QRCode extends React.Component<QRCodeProps> { }
 
     export default QRCode;
 }
