@@ -1,7 +1,8 @@
 {
   "name": "react-native-qr-generator",
   "version": "1.0.4",
-  "description": "",
+  "description": "Generate QR Code Images in React-Native",
+  "homepage": "https://github.com/zapper-dev/react-native-qr-generator",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -15,7 +16,7 @@
     "qrcode"
   ],
   "author": "Zapper",
-  "license": "",
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2",
     "prop-types": "^15.6.2"
